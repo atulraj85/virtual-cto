@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import "./Options.scss";
+import "./Options.css";
 
 const optionsData = [
   {
