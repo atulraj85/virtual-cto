@@ -4,3 +4,10 @@ export type Feature = {
   title: string;
   description: string;
 };
+
+
+export type Work = {
+  id: number;
+  title: string;
+  description: string;
+};

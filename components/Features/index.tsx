@@ -14,10 +14,10 @@ const Feature = () => {
           <SectionHeader
             headerInfo={{
               title: "VIRTUAL CTO FEATURES",
-              subtitle: "Core Features of VIRTUAL CTO",
-              description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-            convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-            ante in maximus.`,
+
+              subtitle: "Why Your Organization Needs a Virtual CTO/CTOaaS?",
+              description:
+                "",
             }}
           />
           {/* <!-- Section Title End --> */}

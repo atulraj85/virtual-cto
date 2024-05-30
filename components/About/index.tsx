@@ -3,6 +3,21 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
+const data = [
+  {
+    number: "01",
+    title: "Manager of Project Teams",
+    description:
+      "Responsible for overseeing project teams, ensuring timely delivery, and managing resources effectively. In charge of employee growth and development, providing mentorship and guidance to enhance their skills and knowledge.",
+  },
+  {
+    number: "02",
+    title: "Chief Technology Officer",
+    description:
+      "Directs the organization's technology strategy and ensures it aligns with business goals. Brings creative and innovative ideas, driving technological advancements. Oversees the technical team and ensures successful technology implementations.",
+  },
+];
+
 const About = () => {
   return (
     <>
@@ -59,49 +74,26 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right md:w-1/2"
             >
-              <span className="font-medium uppercase text-black dark:text-white">
-                <span className="mb-4 mr-4 inline-flex rounded-full bg-meta px-4.5 py-1 text-metatitle uppercase text-white ">
-                  New
-                </span>{" "}
-                SaaS Boilerplate for Next.js
-              </span>
+              <span className="font-medium uppercase text-black dark:text-white"></span>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                A Complete Solution for
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark">
-                  SaaS Startup
-                </span>
+                What is the role of Virtual CTO?{" "}
               </h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
-              </p>
 
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    01
-                  </p>
+              {data.map((item, index) => (
+                <div key={index} className="mt-7.5 flex items-center gap-5">
+                  <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
+                    <p className="text-metatitle2 font-semibold text-black dark:text-white">
+                      {item.number}
+                    </p>
+                  </div>
+                  <div className="w-3/4">
+                    <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
+                      {item.title}
+                    </h3>
+                    <p>{item.description}</p>
+                  </div>
                 </div>
-                <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    React 18, Next.js 13 and TypeScript
-                  </h3>
-                  <p>Ut ultricies lacus non fermentum ultrices.</p>
-                </div>
-              </div>
-              <div className="mt-7.5 flex items-center gap-5">
-                <div className="flex h-15 w-15 items-center justify-center rounded-[50%] border border-stroke dark:border-strokedark dark:bg-blacksection">
-                  <p className="text-metatitle2 font-semibold text-black dark:text-white">
-                    02
-                  </p>
-                </div>
-                <div className="w-3/4">
-                  <h3 className="mb-0.5 text-metatitle2 text-black dark:text-white">
-                    Fully Customizable
-                  </h3>
-                  <p>consectetur adipiscing elit fermentum ultricies.</p>
-                </div>
-              </div>
+              ))}
             </motion.div>
           </div>
         </div>
@@ -130,18 +122,16 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_left md:w-1/2"
             >
-              <h4 className="font-medium uppercase text-black dark:text-white">
-                Launch Your SaaS Fast
-              </h4>
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
-                Packed with All Essential {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg2 dark:before:bg-titlebgdark">
-                  Integrations
-                </span>
+                What Is CTO Responsible for? {"   "}
               </h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                ultricies lacus non fermentum ultrices. Fusce consectetur le.
+                The responsibilities of a CTO remote can vary greatly depending
+                on the size and type of company. It is important to know if you
+                want to hire CTO that this specialist is an executive top
+                manager whose position involves the strategic solution of
+                technical issues in the organization and does not imply
+                participation in the development of specific tasks and projects.
               </p>
               <div>
                 <a
