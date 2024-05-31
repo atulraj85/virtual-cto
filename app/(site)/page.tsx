@@ -27,16 +27,14 @@ export default function Home() {
       <Brands />
       <Feature />
       <About />
-      <HowItWorks/>
+      <HowItWorks />
       <FeaturesTab />
       <FunFact />
-      <Integration />
+      <Pricing />
       <CTA />
       <FAQ />
       <Testimonial />
-      <Pricing />
       <Contact />
-      <Blog />
     </main>
   );
 }

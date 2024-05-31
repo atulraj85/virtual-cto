@@ -28,7 +28,7 @@ export const HowItWorks = () => {
   return (
     <section
       id="howItWorks"
-      className="container mx-auto py-24 text-center sm:py-32"
+      className="container mx-auto max-w-c-1390 py-24 text-center sm:py-32"
     >
       <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
         How It{" "}

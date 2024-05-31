@@ -1,39 +1,68 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Options.css";
 
 const optionsData = [
   {
-    url: "https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg",
-    title: "Virtual",
+    url: "/images/hero/accordion/business-men-use-laptops-entrance-office-building.jpg",
+    title: "Business Men Using Laptops",
     description: "Description for option 1",
   },
   {
-    url: "https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg",
-    title: "Chief Technical",
+    url: "/images/hero/accordion/portrait-indigenous-businesswoman.jpg",
+    title: "Indigenous Businesswoman Portrait",
     description: "Description for option 2",
   },
   {
-    url: "https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg",
-    title: "Officer",
+    url: "/images/hero/accordion/smiling-business-man-sitting-empty-office-desk.jpg",
+    title: "Smiling Business Man at Desk",
     description: "Description for option 3",
   },
 ];
 
 const Options = () => {
   const [activeOption, setActiveOption] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+
+  useEffect(() => {
+    let intervalId;
+
+    if (!isPaused) {
+      intervalId = setInterval(() => {
+        setActiveOption((prevIndex) => (prevIndex + 1) % optionsData.length);
+      }, 2000);
+    }
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, [isPaused]);
 
   const handleClick = (index) => {
     setActiveOption(index);
   };
 
+  const handleMouseEnter = () => {
+    setIsPaused(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsPaused(false);
+  };
+
   return (
-    <div className="options">
+    <div
+      className="options"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       {optionsData.map((option, index) => (
         <div
           key={index}
-          className={`option ${index === activeOption ? "active" : ""} `}
+          className={`option ${index === activeOption ? "active" : ""}`}
           onClick={() => handleClick(index)}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
           style={{ backgroundImage: `url(${option.url})` }}
         >
           <div className="label absolute bottom-5 right-5 flex items-center">

@@ -17,8 +17,8 @@ const About = () => {
   return (
     <>
       {/* <!-- ===== About Start ===== --> */}
-      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
-        <div className="mx-auto  px-4 md:px-8 xl:px-0">
+      <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30 ">
+        <div className="mx-auto  max-w-c-1315 px-4 md:px-8 xl:px-0">
           <div className="flex items-center">
             <motion.div
               variants={{
@@ -133,7 +133,7 @@ const About = () => {
               viewport={{ once: true }}
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
-              <div className="flex items-center mt-22">
+              <div className="mt-22 flex items-center">
                 <Checklist data={data} />
               </div>
             </motion.div>

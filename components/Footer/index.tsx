@@ -56,7 +56,7 @@ const Footer = () => {
                   href="#"
                   className="text-itemtitle font-medium text-black dark:text-white"
                 >
-                  hello@solid.com
+                  info@gennextit.com
                 </a>
               </motion.div>
 
@@ -301,7 +301,8 @@ const Footer = () => {
               className="animate_top"
             >
               <p>
-                &copy; {new Date().getFullYear()} Virtual CTO. All rights reserved
+                &copy; {new Date().getFullYear()} Virtual CTO. All rights
+                reserved
               </p>
             </motion.div>
 

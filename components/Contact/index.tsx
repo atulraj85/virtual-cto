@@ -107,7 +107,7 @@ const Contact = () => {
                       type="checkbox"
                       className="peer sr-only"
                     />
-                    <span className="border-gray-300 bg-gray-100 text-blue-600 dark:border-gray-600 dark:bg-gray-700 group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded peer-checked:bg-primary">
+                    <span className="group mt-2 flex h-5 min-w-[20px] items-center justify-center rounded border-gray-300 bg-gray-100 text-blue-600 peer-checked:bg-primary dark:border-gray-600 dark:bg-gray-700">
                       <svg
                         className="opacity-0 peer-checked:group-[]:opacity-100"
                         width="10"
@@ -178,27 +178,34 @@ const Contact = () => {
                 Find us
               </h2>
 
-              <div className="5 mb-7">
+              <div className="mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
-                  Our Loaction
+                  Our Location
                 </h3>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>India Office: F-02, C-23, Sector 63, Noida (UP)-201305</p>
+                <p>
+                  Dubai Office: Trois Con International FZC SAIF Office,
+                  R3-07/A, PO Box 8692 Sharjah UAE
+                </p>
               </div>
-              <div className="5 mb-7">
+              <div className="mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Email Address
                 </h3>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="mailto:info@gennextit.com">info@gennextit.com</a>
                 </p>
               </div>
               <div>
                 <h4 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Phone Number
                 </h4>
-                <p>
-                  <a href="#">+009 42334 6343 843</a>
-                </p>
+                <div>
+                  <a href="tel:+917840079095">+91-78400-79095</a>
+                </div>
+                <div>
+                  <a href="tel:+911204994499">+91-120-4994499</a>
+                </div>
               </div>
             </motion.div>
           </div>
