@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Options from "./Options";
+import Link from "next/link";
 
 const Hero = () => {
   const [email, setEmail] = useState("");
@@ -14,7 +15,7 @@ const Hero = () => {
     <>
       <section className="-mt-15 overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
-          <div className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap lg:items-center lg:justify-between lg:gap-8 xl:gap-32.5">
+          <div className="flex flex-col flex-wrap lg:flex-row lg:flex-nowrap lg:items-center lg:justify-between lg:gap-4 xl:gap-25">
             <div className="md:w-1/2">
               <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
                 {/* Hire Virtual CTO Today */}
@@ -36,18 +37,19 @@ const Hero = () => {
                     aria-label="get started button"
                     className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                   >
-                    Get Started
+                    <Link href="tel:+91-78400-79095"> Call Us</Link>
+                    <br></br>
                   </button>
-                  <button
+                  {/* <button
                     aria-label="get started button"
                     className="flex rounded-full bg-gray-200 px-7.5 py-2.5 text-black duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
                   >
                     Learn More
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
-            <div className="lg:w-1/2">
+            <div className="lg:w-1/2 md:mt-6">
               <Options />
             </div>
           </div>

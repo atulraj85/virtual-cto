@@ -37,8 +37,9 @@ export const HowItWorks = () => {
         </span>
       </h2>
       <p className="mx-auto mb-8 mt-4 text-xl text-black dark:text-white md:w-3/4">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+        We will have periodic meetings with you and your team. We jointly
+        quantify the pain points. We then do our research and analysis and
+        propose solutions through discussions/documents.
       </p>
 
       <div className="grid grid-cols-1 gap-8 text-black dark:text-white md:grid-cols-2 lg:grid-cols-3">

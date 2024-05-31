@@ -3,6 +3,7 @@ import React from "react";
 import featuresData from "./featuresData";
 import SingleFeature from "./SingleFeature";
 import SectionHeader from "../Common/SectionHeader";
+import FeatureItem from "./FeatureItem";
 
 const Feature = () => {
   return (
@@ -13,11 +14,9 @@ const Feature = () => {
           {/* <!-- Section Title Start --> */}
           <SectionHeader
             headerInfo={{
-              title: "VIRTUAL CTO FEATURES",
-
+              title: "",
               subtitle: "Why Your Organization Needs a Virtual CTO/CTOaaS?",
-              description:
-                "",
+              description: "",
             }}
           />
           {/* <!-- Section Title End --> */}
@@ -26,7 +25,7 @@ const Feature = () => {
             {/* <!-- Features item Start --> */}
 
             {featuresData.map((feature, key) => (
-              <SingleFeature feature={feature} key={key} />
+              <FeatureItem feature={feature} key={key} />
             ))}
             {/* <!-- Features item End --> */}
           </div>
