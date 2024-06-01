@@ -13,6 +13,7 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 import { HowItWorks } from "@/components/Work/HowItWorks";
+import Activities from "@/components/Activities";
 
 export const metadata: Metadata = {
   title: "Virtual CTO",
@@ -31,6 +32,7 @@ export default function Home() {
       <FeaturesTab />
       <FunFact />
       <Pricing />
+      <Activities/>
       <CTA />
       <FAQ />
       <Testimonial />

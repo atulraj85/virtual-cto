@@ -14,7 +14,7 @@ const optionsData = [
     description: "Description for option 2",
   },
   {
-    url: "/images/hero/accordion/smiling-business-man-sitting-empty-office-desk.jpg",
+    url: "/images/hero/accordion/smiling-businessman.jpg",
     title: "Smiling Business Man at Desk",
     description: "Description for option 3",
   },
@@ -63,7 +63,11 @@ const Options = () => {
           onClick={() => handleClick(index)}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          style={{ backgroundImage: `url(${option.url})` }}
+          style={{
+            backgroundImage: `url(${option.url})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover"// Add this line
+          }}
         >
           <div className="label absolute bottom-5 right-5 flex items-center">
             <div className="info ml-3 text-white">
